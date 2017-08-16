@@ -1,0 +1,63 @@
+
+/**
+* Default Element Styles
+*/
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Helvetica', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #0033cc;
+}
+
+a:hover {
+	color: #003366;
+}
+
+ul {
+	display: inline-block;
+}
+
+hr {
+	margin: 30px 0;
+}
+
+/**
+* Layout Styles
+*/
+
+.wrapper {
+	max-width: 80%;
+	margin: auto;
+}
+
+.att-getter {
+	text-align: center;
+}
+/**
+* Text Styles
+*/
+
+.important {
+	color: #0033cc;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.button {
+	padding: 1em;
+	margin: 0 0 12px 0;
+	text-decoration: none;
+	background-color: #0033cc;
+	border-radius: 10px;
+	font-family: 'Helvetica', sans-serif;
+	color: #fff;
+}
+
+.button:hover {
+	background-color: #003366;
+	color: #fff;
+}
