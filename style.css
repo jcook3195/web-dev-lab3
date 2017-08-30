@@ -1,5 +1,20 @@
 
 /**
+*
+*	Jordan Cook - Lab 2
+*
+*	Color Codes
+*
+*	Blue : #0033cc
+*	Red : #cc3300
+*	Green : #99cc00
+*	Grey : #666666
+*	Black : #000000
+*
+**/
+
+
+/**
 * Default Element Styles
 */
 
@@ -7,17 +22,65 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Helvetica', sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 8px 0 12px 0;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 600;
+	margin: 8px 0 10px 0;
+}
+
+h3 {
+	font-size: 32px;
+	margin: 6px 0 8px 0;
+}
+
+h4 {
+	font-size: 28px;
+	margin: 6px 0 6px 0;
+}
+
+h5 {
+	font-size: 24px;
+	margin: 4px 0 6px 0;
+}
+
+h6 {
+	font-size: 20px;
+	margin: 4px 0 6px 0;
+}
+
+p {
+	font-size: 16px;
+	margin: 4px 0 12px 0;
+}
+
 a {
 	text-decoration: none;
 	color: #0033cc;
+	display: inline-block;
 }
 
 a:hover {
 	color: #003366;
 }
 
-ul {
+ul, ol, dl {
+	list-style-position: inside;
 	display: inline-block;
+	margin-left: 10px;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ol {
+	list-style-type: decimal;
 }
 
 hr {
@@ -28,17 +91,108 @@ hr {
 * Layout Styles
 */
 
+.clear {
+	clear: both;
+}
+
 .wrapper {
-	max-width: 80%;
-	margin: auto;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 20px 0;
 }
 
 .att-getter {
 	text-align: center;
+	padding: 20px 0;
+	border-bottom: 2px solid #666;
+	border-top: 2px solid #666;
+	text-decoration: underline;
 }
+
+.about-container {
+	width: 60%;
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+.service-box {
+	width: 30%;
+	float: left;
+	padding: 10px;
+	background-color: #cc3300;
+	border-radius: 10px;
+	margin: 20px 0 40px 0;
+	-webkit-box-shadow: 1px 1px 4px #0033cc;
+	-moz-box-shadow: 1px 1px 4px #0033cc;
+	-ms-box-shadow: 1px 1px 4px #0033cc;
+	box-shadow: 1px 1px 4px #0033cc;
+}
+
+.service-box p {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.service-box a {
+	margin-bottom: 0;
+}
+
+.chamber-list {
+	list-style-type: none;
+	font-family: 'Lato', sans-serif;
+}
+
+.chamber-list li {
+	float: left;
+	margin: 0 4px;
+}
+
+.chamber-list li a {
+	border-bottom: 0px solid transparent; 
+	transition: 0.5s ease;
+}
+
+.chamber-list li a:hover {
+	border-bottom: 1px solid #0033cc;
+	color: #0033cc;
+}
+
 /**
 * Text Styles
 */
+
+.title {
+	color: #99cc00;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+footer p {
+	text-align: center;
+}
+
+.about-container h2 {
+	font-size: 22px;
+}
+
+.service-box ul {
+	list-style-type: none;
+	list-style-position: outside;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+}
+
+.service-box li:before {
+	content: "\2713  ";
+	color: #99cc00;
+	font-weight: 600;
+}
 
 .important {
 	color: #0033cc;
@@ -55,9 +209,73 @@ hr {
 	border-radius: 10px;
 	font-family: 'Helvetica', sans-serif;
 	color: #fff;
+	transition: 0.5s ease;
 }
 
 .button:hover {
 	background-color: #003366;
 	color: #fff;
+}
+
+/**
+*	Media Queries
+*/
+
+@media only screen and (max-width: 1024px) {
+
+	footer {
+		text-align: center;
+	}
+
+	.wrapper {
+		max-width: 960px;
+	}
+
+	.chamber-list {
+		text-align: center;
+	}
+
+	.chamber-list li {
+		float: none;
+	}
+
+}
+
+@media only screen and (max-width: 960px) {
+
+	.wrapper {
+		max-width: 800px;
+	}
+
+	.service-box,
+	.about-container {
+		float: none;
+	}
+
+	.service-box {
+		width: 50%;
+		margin: 12px auto;
+	}
+
+	.about-container {
+		width: 90%;
+		margin: 0 auto 12px auto;
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+	.service-box {
+		width: 70%;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	.service-box {
+		width: 90%;
+	}
+
 }
