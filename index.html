@@ -6,10 +6,37 @@
 		<title>Keith McDonald Plumbing</title>
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
+
+		<div class="jumbotron">
+			<div class="header">
+				<div class="wrapper">
+					<h1 class="title">Keith McDonald Plumbing</h1>
+
+					<nav class="main-nav">
+						<ul class="nav">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div><!-- END .wrapper -->
+			</div><!-- END .header -->
+			<div class="wrapper">
+
+				<div class="cta-container">
+					<h2 class="cta-text">We provide services for all residential and commercial plumbing needs.</h2>
+					<a href="#services" class="cta button">View Services</a>
+				</div><!-- END .cta-container -->
+
+			</div><!-- END .wrapper -->
+		</div><!-- END .jumbotron -->
+
+		<a id="services"></a>
 		<div class="wrapper">
-			<h1 class="title">Keith McDonald Plumbing</h1>
 
 			<div class="about-container">
 				<h2>Leaky pipes? Stopped up toilets? Full Septic Tanks?</h2>
@@ -21,7 +48,7 @@
 				<p><a href="#">Contact us today.</a> We're looking forward to hearing from you!</p>
 			</div><!-- END .about-container -->
 
-			<div class="service-box">
+			<div class="service-box" >
 				<ul id="service-list">
 					<li>Installation &amp; Service of Septic Tanks &amp;</li>
 					<li>Sewer Systems</li>
@@ -41,6 +68,22 @@
 
 			<div class="clear"></div>
 
+			<div class="gallery">
+				<figure class="gal-img first">
+					<img src="img/back-hoe.jpg" alt="Backhoe at work">
+					<figcaption>Backhoe</figcaption>
+				</figure>
+				<figure class="gal-img">
+					<img src="img/pumper-truck.jpg" alt="Keith McDonald Pumper Truck">
+					<figcaption>Pumper Truck</figcaption>
+				</figure>
+				<figure class="gal-img">
+					<img src="img/shop.jpg" alt="Keith McDonald shop">
+					<figcaption>Our Shop</figcaption>
+				</figure>
+				<div class="clear"></div>
+			</div><!-- END .gallery -->
+
 			<p class="att-getter">General Plumbing Service Professionals - <span class="important">LICENSED &amp; INSURED</span></p>
 
 			<footer>
@@ -48,12 +91,13 @@
 				<p class="italic bold">Proud Member of:</p>       
 
 				<ul class="chamber-list">
-					<li><a href="http://washingtoncountyga.com/" target="_blank">Washington County Chamber of Commerce</a></li>
-					<li><a href="http://wilcochamber.com/" target="_blank">Wilkinson County Georgia Chamber of Commerce</a></li>
-					<li><a href="http://milledgevillega.com/" target="_blank">Baldwin County Chamber of Commerce</a></li>
+					<li><a href="http://washingtoncountyga.com/" target="_blank"><img src="img/washington-county.png" alt="Washington County Chamber of Commerce"></a></li>
+					<li><a href="http://wilcochamber.com/" target="_blank"><img src="img/wilkinson-county.png" alt="Wilkinson County Georgia Chamber of Commerce"></a></li>
+					<li><a href="http://milledgevillega.com/" target="_blank"><img src="img/baldwin-county.png" alt="Baldwin County Chamber of Commerce"></a></li>
 				</ul>
 
 			</footer>
 		</div><!-- end .wrapper -->
+	<script src="smooth-scroll.js"></script>
 	</body>
 </html>
